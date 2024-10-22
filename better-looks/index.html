@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Block Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="text-align: center; color: #333;">Content Block Builder</h1>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <div>
+            <input type="text" id="image2" placeholder="Enter Image URL for Cell 2" onchange="updateImage(2)">
+            <input type="text" id="image3" placeholder="Enter Image URL for Cell 3" onchange="updateImage(3)">
+            <input type="text" id="image4" placeholder="Enter Image URL for Cell 4" onchange="updateImage(4)">
+        </div>
+    </div>
+    <table id="contentTable">
+        <tr>
+            <td class="cell-1" contenteditable="true">
+                Word 1<br>
+                Word 2<br>
+                Word 3
+            </td>
+            <td class="content-cell" contenteditable="true">
+                <img id="image-2" class="image" src="" alt="Image 2">
+                <div contenteditable="true">Content below image.</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="content-cell" contenteditable="true">
+                <img id="image-3" class="image" src="" alt="Image 3">
+                <div contenteditable="true">Content below image.</div>
+            </td>
+            <td class="content-cell" contenteditable="true">
+                <img id="image-4" class="image" src="" alt="Image 4">
+                <div contenteditable="true">Content below image.</div>
+            </td>
+        </tr>
+    </table>
+    <div style="text-align: center;">
+        <button onclick="downloadHtmlFile()">Download HTML</button>
+    </div>
+    <script src="script.js"></script> <!-- Your JS file here -->
+</body>
+</html>

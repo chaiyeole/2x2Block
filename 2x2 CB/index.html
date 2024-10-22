@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Email Content Block</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+</head>
+<body>
+    <!-- Form to update image URLs for cells 2, 3, 4 -->
+    <form id="imageForm">
+        <label for="image1">Image URL for Cell 2:</label>
+        <input type="text" id="image1" placeholder="Enter image URL for cell 2" onchange="updateImage(1)">
+        <br>
+        <label for="image2">Image URL for Cell 3:</label>
+        <input type="text" id="image2" placeholder="Enter image URL for cell 3" onchange="updateImage(2)">
+        <br>
+        <label for="image3">Image URL for Cell 4:</label>
+        <input type="text" id="image3" placeholder="Enter image URL for cell 4" onchange="updateImage(3)">
+    </form>
+
+    <!-- Table Structure -->
+    <table id="contentTable" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <!-- Cell 1 -->
+            <td class="cell-1" id="cell-1" contenteditable="true">
+                <p>First Word</p>
+                <p>Second Word</p>
+                <p>Third Word</p>
+            </td>
+
+            <!-- Cell 2 -->
+            <td class="content-cell" id="cell-2" contenteditable="true">
+                <img src="" alt="Image 1" id="image-1" class="image">
+                <p>Editable text below image 1</p>
+            </td>
+        </tr>
+        <tr>
+            <!-- Cell 3 -->
+            <td class="content-cell" id="cell-3" contenteditable="true">
+                <img src="" alt="Image 2" id="image-2" class="image">
+                <p>Editable text below image 2</p>
+            </td>
+
+            <!-- Cell 4 -->
+            <td class="content-cell" id="cell-4" contenteditable="true">
+                <img src="" alt="Image 3" id="image-3" class="image">
+                <p>Editable text below image 3</p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Download Button -->
+    <button id="downloadBtn" onclick="downloadHtmlFile()">Download HTML & CSS</button>
+
+    <script src="scripts.js"></script> <!-- External JS -->
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; /* Light background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Dark text for the heading */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px); /* Full-width minus padding */
+    padding: 10px;
+    margin: 10px 5px; /* Space below input */
+    background-color: #f7f7f7; /* Light background for inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    color: #333; /* Dark text */
+    font-size: 16px; /* Font size for input */
+}
+
+input[type="text"]::placeholder {
+    color: #888; /* Placeholder color */
+}
+
+button {
+    display: block;
+    margin: 20px auto; /* Center the button */
+    padding: 10px 20px;
+    background-color: #007acc; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Button font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #005fa3; /* Darker shade on hover */
+}
+
+table {
+    border-spacing: 16px; /* Updated border-spacing */
+    border-collapse: separate; /* Keep borders separate for spacing */
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto; /* Centered table */
+    background-color: #D0E6FF; /* Light blue background for table */
+}
+
+td {
+    padding: 16px;
+    vertical-align: top;
+    text-align: left;
+    width: 50%;
+    min-height: 100px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-all;
+    hyphens: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.cell-1 {
+    background-color: #007acc; /* Blue background for cell 1 */
+    color: white;
+}
+
+.content-cell {
+    background-color: #F0F8FF; /* Light teal background for content cells */
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 10px 0; /* Margin for spacing */
+}

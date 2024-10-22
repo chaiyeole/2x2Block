@@ -1,0 +1,70 @@
+/* General styles for the table and cells */
+body {
+    margin: 0;
+    padding: 0;
+}
+td {
+    padding: 16px;
+    vertical-align: top;
+    text-align: left;
+    width: 50%;
+    min-height: 100px;
+    word-wrap: break-word; /* Allow long words to wrap */
+    overflow-wrap: break-word; /* Prevent overflow of long words */
+    overflow: hidden; /* Prevent overflowing text */
+    white-space: normal; /* Allow normal line breaking */
+    word-break: break-all; /* Break long words */
+    hyphens: auto; /* Enable hyphenation */
+    max-width: 100%; /* Ensure cells don't exceed width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+
+table {
+    border-spacing: 16px; /* Space between cells */
+    border-collapse: separate; /* Separate borders for spacing */
+    max-width: 600px; /* Max width of 600px */
+    width: 100%;
+    background-color: #D0E6FF; /* Light blue background for the entire table */
+    margin: 0 auto; /* Center the table */
+}
+
+td {
+    padding: 16px; /* 16px padding */
+    vertical-align: top;
+    text-align: left; /* Left align content */
+    width: 50%; /* Fix width to 50% of the table */
+    min-height: 100px; /* Ensure cells have some default height */
+}
+
+/* Styles for individual cells */
+.cell-1 {
+    background-color: #0056b3; /* Blue background */
+    color: white;
+}
+
+.content-cell {
+    background-color: #F0F8FF; /* Light background for other cells */
+}
+
+.image {
+    width: 100%; /* Ensure image fits the width of the cell */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Make sure the image is fully visible without cropping */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive layout */
+@media only screen and (max-width: 480px) {
+    td {
+        display: block;
+        width: 100%;
+    }
+
+    img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain;
+    }
+}
